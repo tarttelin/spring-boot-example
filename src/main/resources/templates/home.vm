@@ -1,0 +1,2 @@
+#set($pageTitle = 'Home Page')
+<div>Hello ${sec.loggedInUser().get().getFullname()}!</div>

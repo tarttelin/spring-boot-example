@@ -1,0 +1,26 @@
+#set($pageTitle = 'Sign in')
+<div>
+    <form action="/login" method="post">
+        <fieldset class="login__fieldset">
+            <div class="form-group">
+                <legend>Sign in</legend>
+                #if($param.error)
+                    Invalid username or password
+                #end
+                #if($param.logout)
+                    Successfully signed out
+                #end
+            </div>
+            <div class="form-group">
+                <label class="label-inline" for="username">Username:</label><input type="text" id="username"
+                                                                                   name="username"/>
+            </div>
+            <div class="form-group">
+                <label class="label-inline" for="password">Password:</label><input type="password" id="password"
+                                                                                   name="password"/>
+            </div>
+        </fieldset><div class="form-right-column form-submit">
+        <input class="submit-button" type="submit" value="Sign in"/>
+    </div>
+    </form>
+</div>

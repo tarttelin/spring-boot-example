@@ -1,0 +1,15 @@
+
+ext {
+
+    mysql        = 'mysql:mysql-connector-java:5.1.31'
+
+    slf4j        = ['org.slf4j:slf4j-api:1.7.7','org.slf4j:slf4j-simple:1.7.7']
+    //////////////////////////
+    //   TEST DEPENDENCIES
+    //////////////////////////
+    junit        = "junit:junit:4.11"
+    mockito      = "org.mockito:mockito-core:1.9.5"
+    makeItEasy   = 'com.natpryce:make-it-easy:3.1.0'
+    jsoup        = 'org.jsoup:jsoup:1.7.3'
+    hsql         = 'org.hsqldb:hsqldb:2.3.2'
+}

@@ -1,0 +1,16 @@
+<div class="header__banner">
+    <h1 class="header__logo"><strong>Bare bones</strong>.<span class="phase-tag">alpha</span></h1>
+
+    #if($sec.loggedInUser().isPresent())
+        <div class="user-settings">
+            <button type="button" class="t-user-settings user-settings__trigger js-menu">${sec.loggedInUser().get().getFullname()}<span class="hidden"> Settings</span></button>
+            <ul id="menu" class="user-settings__list">
+                #if($sec.isAdmin())
+                    <li><a class="user-settings__list-link" href="/admin/users">Add user</a></li>
+                #end
+                <li><a class="user-settings__list-link" href="/logout">Sign out</a></li>
+            </ul>
+        </div>
+    #end
+</div>
+
